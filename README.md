@@ -3,7 +3,7 @@
 Note: this requires use of [nodecg-smashcontrol-react](https://github.com/smashcontrol/nodecg-smashcontrol-react). Please refer to the README in that repo for installation instructions. Any configuration for these layouts is done there.
 
 ### Initial Setup
-Once smashcontrol is installed, install this bundle with `nodecg install swc19/default-64-graphics`. Then, run nodecg with `nodecg start`. If there are package issues, you may need to navigate to `bundles/default-64-graphics`, then run `npm install`. 
+Once smashcontrol is installed, install this bundle with `nodecg install swc19/default-64-graphics`. This bundle must also first be built using `yarn build`, after navigating to the directory it was installed to `bundles/default-64-graphics`. The bundle must be built every time an update is made; this is a pain but enables some additional features in NodeCG that wouldn't be available if it wasn't packaged like this. If you do not have yarn, you can install it with `npm install --global yarn`. Then, run nodecg with `nodecg start`. If there are package issues, you may need to navigate to `bundles/default-64-graphics`, then run `npm install`. 
 
 
 ### Layout Configuration
